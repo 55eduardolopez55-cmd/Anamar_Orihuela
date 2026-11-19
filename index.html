@@ -3,96 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Principal</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            padding: 20px;
-        }
-        .container {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; }
-        .qr-box {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            display: inline-block;
-            margin: 20px 0;
-        }
-        .qr-box img { border-radius: 10px; }
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .link-card {
-            background: rgba(255,255,255,0.15);
-            padding: 15px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: white;
-            transition: all 0.3s;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        .link-card:hover {
-            background: rgba(255,255,255,0.25);
-            transform: translateY(-3px);
-        }
-        .url-text {
-            font-size: 0.8rem;
-            word-break: break-all;
-            margin-top: 10px;
-            opacity: 0.7;
-        }
-    </style>
+    <title>Anamar Orihuela — Aham Prema (Un Canto del Alma)</title>
+    <meta name="description" content="Escucha Aham Prema (Un Canto del Alma), el nuevo EP de Anamar Orihuela. Cinco canciones disponibles en todas las plataformas.">
+    <meta property="og:title" content="Anamar Orihuela — Aham Prema (Un Canto del Alma)">
+    <meta property="og:description" content="El nuevo EP de Anamar Orihuela. Escúchalo en tu plataforma favorita.">
+    <meta property="og:image" content="assets/cover.jpg">
+    <link rel="icon" type="image/jpeg" href="assets/cover.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Landing Principal</h1>
-        <p>Estructura lista para nutrir contenido</p>
+    <main class="page">
 
-        <div class="qr-box" id="qrcode"></div>
-        <div class="url-text" id="current-url"></div>
+        <header class="rise">
+            <p class="eyebrow">Anamar Orihuela<span class="sep" aria-hidden="true"></span>Nuevo EP</p>
+            <h1 class="album-title">Aham Prema</h1>
+            <p class="album-sub">Un Canto del Alma</p>
+        </header>
 
-        <div class="links-grid">
-            <a href="pagina1.html" class="link-card">Página 1</a>
-            <a href="pagina2.html" class="link-card">Página 2</a>
-            <a href="pagina3.html" class="link-card">Página 3</a>
-            <a href="pagina4.html" class="link-card">Página 4</a>
-            <a href="pagina5.html" class="link-card">Página 5</a>
-        </div>
-    </div>
+        <figure class="cover rise rise-2">
+            <img src="assets/cover.jpg" alt="Portada del EP Aham Prema (Un Canto del Alma) de Anamar Orihuela" width="600" height="600">
+        </figure>
+        <p class="cover-caption rise rise-2">5 canciones<span class="sep" aria-hidden="true"></span>2026</p>
 
-    <script>
-        const currentUrl = window.location.href;
-        document.getElementById('current-url').textContent = currentUrl;
-        new QRCode(document.getElementById("qrcode"), {
-            text: currentUrl,
-            width: 180,
-            height: 180,
-            colorDark : "#000000",
-            colorLight : "#ffffff",
-            correctLevel : QRCode.CorrectLevel.H
-        });
-    </script>
+        <div class="rule rise rise-3" aria-hidden="true"></div>
+
+        <p class="section-label rise rise-3">Las canciones</p>
+        <ul class="tracklist rise rise-3">
+            <li><a href="pagina1.html">
+                <span class="track-num">01</span>
+                <span class="track-name">Santi</span>
+                <span class="track-arrow" aria-hidden="true">&#8594;</span>
+            </a></li>
+            <li><a href="pagina2.html">
+                <span class="track-num">02</span>
+                <span class="track-name">Vuelve a Mí</span>
+                <span class="track-arrow" aria-hidden="true">&#8594;</span>
+            </a></li>
+            <li><a href="pagina3.html">
+                <span class="track-num">03</span>
+                <span class="track-name">Ave María</span>
+                <span class="track-arrow" aria-hidden="true">&#8594;</span>
+            </a></li>
+            <li><a href="pagina4.html">
+                <span class="track-num">04</span>
+                <span class="track-name">La Niña que Fui</span>
+                <span class="track-arrow" aria-hidden="true">&#8594;</span>
+            </a></li>
+            <li><a href="pagina5.html">
+                <span class="track-num">05</span>
+                <span class="track-name">Aham Prema</span>
+                <span class="track-arrow" aria-hidden="true">&#8594;</span>
+            </a></li>
+        </ul>
+
+        <div class="rule rise rise-4" aria-hidden="true"></div>
+
+        <p class="section-label rise rise-4">Escuchar el EP completo</p>
+        <ul class="services rise rise-4">
+            <li><a href="https://open.spotify.com/album/1hZbb0Q7AqHT9Ruf0MCHZq" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>Spotify</span>
+                <span class="service-action">Play</span>
+            </a></li>
+            <li><a href="https://music.apple.com/album/6834157784" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>Apple Music</span>
+                <span class="service-action">Play</span>
+            </a></li>
+            <li><a href="https://music.apple.com/album/6834157784?app=itunes" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>iTunes Store</span>
+                <span class="service-action">Descargar</span>
+            </a></li>
+            <li><a href="https://www.deezer.com/album/1145600561" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>Deezer</span>
+                <span class="service-action">Play</span>
+            </a></li>
+            <li><a href="https://music.amazon.com/albums/B0HRJHVHFW" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>Amazon Music</span>
+                <span class="service-action">Play</span>
+            </a></li>
+            <li><a href="https://tidal.com/browse/album/578668676" target="_blank" rel="noopener">
+                <span class="service-name"><span class="service-dot" aria-hidden="true"></span>Tidal</span>
+                <span class="service-action">Play</span>
+            </a></li>
+        </ul>
+
+        <div class="rule rise rise-4" aria-hidden="true"></div>
+
+        <section class="qr-section rise rise-4">
+            <p class="section-label" style="text-align:center;">Escanea y comparte</p>
+            <div class="qr-box" id="qrcode"></div>
+            <p class="qr-url" id="qr-url"></p>
+        </section>
+
+        <footer>
+            <p>Anamar Orihuela<span class="sep" aria-hidden="true"></span>Aham Prema (Un Canto del Alma)</p>
+        </footer>
+
+    </main>
 </body>
 </html>
